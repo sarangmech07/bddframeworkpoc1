@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: parallelRun.parallelRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 111.107 s <<< FAILURE! - in parallelRun.parallelRunner
+runScenario(parallelRun.parallelRunner)  Time elapsed: 105.207 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: Forgot your password?12
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN6984194', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.28.0, moz:headless: false, moz:processID: 18528, moz:profile: C:\Users\bitphili0\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2b4d5f22-49e8-4830-b796-1c650c3a54a7
+*** Element info: {Using=link text, value=Forgot your password?12}
+

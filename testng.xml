@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+	<test name="Cucumber Test" verbose="2">
+		<classes>
+			<class name="parallelRun.parallelRunner2" />
+			<!-- <class name="demo.runnertypes.DemoTest" /> -->
+		</classes>
+		
+	</test>
+
+	<!-- <test thread-count="4" name="Test" parallel="classes"> <parameter name="browserName" 
+		value="chrome" /> <classes> <class name="parallelRun.parallelRunner" /> </classes> 
+		</test> -->
+
+	<!-- <test name="Smoke Test- Chrome Browser"> <parameter name="browserName" 
+		value="chrome"/> <classes> <class name = "parallelRun.parallelRunner"/> </classes> 
+		</test> -->
+	<!-- <test name="Smoke Test- Firefox Browser"> <parameter name="browserName" 
+		value="firefox"/> <classes> <class name = "parallelRun.parallelRunner"/> 
+		</classes> </test> -->
+
+
+
+
+</suite> 

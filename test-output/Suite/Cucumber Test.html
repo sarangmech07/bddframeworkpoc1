@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>TestNG:  Cucumber Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Cucumber Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 29 06:02:45 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4260 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='parallelRun.parallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallelRun.parallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Accounts section count", "Optional[Account Page Feature]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.qa.factory.DriverFactory.getDriver()&quot; is null
+	at stepdefinitions.AccountPageSteps.user_has_already_logged_in_to_application(AccountPageSteps.java:30)
+	at ?.user has already logged in to application(file:///C:/BDD_Workspace/ecommerceBDDFramework/src/test/resources/AppFeatures/AccountsPage.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace632319327", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace632319327'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.qa.factory.DriverFactory.getDriver()&quot; is null
+	at stepdefinitions.AccountPageSteps.user_has_already_logged_in_to_application(AccountPageSteps.java:30)
+	at ?.user has already logged in to application(file:///C:/BDD_Workspace/ecommerceBDDFramework/src/test/resources/AppFeatures/AccountsPage.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>parallelRun.parallelRunner@6580cfdd</td></tr>
+<tr>
+<td title='parallelRun.parallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallelRun.parallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login page title", "Optional[Login page feature]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.qa.factory.DriverFactory.getDriver()&quot; is null
+	at stepdefinitions.loginPageSteps.user_is_on_login_page(loginPageSteps.java:19)
+	at ?.user is on login page(file:///C:/BDD_Workspace/ecommerceBDDFramework/src/test/resources/AppFeatures/loginPage.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1616097805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1616097805'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.qa.factory.DriverFactory.getDriver()&quot; is null
+	at stepdefinitions.loginPageSteps.user_is_on_login_page(loginPageSteps.java:19)
+	at ?.user is on login page(file:///C:/BDD_Workspace/ecommerceBDDFramework/src/test/resources/AppFeatures/loginPage.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>parallelRun.parallelRunner@6580cfdd</td></tr>
+<tr>
+<td title='parallelRun.parallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallelRun.parallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Forgot Password link", "Optional[Login page feature]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.qa.factory.DriverFactory.getDriver()&quot; is null
+	at stepdefinitions.loginPageSteps.user_is_on_login_page(loginPageSteps.java:19)
+	at ?.user is on login page(file:///C:/BDD_Workspace/ecommerceBDDFramework/src/test/resources/AppFeatures/loginPage.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace538609575", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace538609575'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.qa.factory.DriverFactory.getDriver()&quot; is null
+	at stepdefinitions.loginPageSteps.user_is_on_login_page(loginPageSteps.java:19)
+	at ?.user is on login page(file:///C:/BDD_Workspace/ecommerceBDDFramework/src/test/resources/AppFeatures/loginPage.feature:10)
+</pre></div></td>
+<td>0</td>
+<td>parallelRun.parallelRunner@6580cfdd</td></tr>
+<tr>
+<td title='parallelRun.parallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallelRun.parallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with correct credentials", "Optional[Login page feature]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.qa.factory.DriverFactory.getDriver()&quot; is null
+	at stepdefinitions.loginPageSteps.user_is_on_login_page(loginPageSteps.java:19)
+	at ?.user is on login page(file:///C:/BDD_Workspace/ecommerceBDDFramework/src/test/resources/AppFeatures/loginPage.feature:14)
+</pre></div><a href='#' onClick='toggleBox("stack-trace163101013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace163101013'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.qa.factory.DriverFactory.getDriver()&quot; is null
+	at stepdefinitions.loginPageSteps.user_is_on_login_page(loginPageSteps.java:19)
+	at ?.user is on login page(file:///C:/BDD_Workspace/ecommerceBDDFramework/src/test/resources/AppFeatures/loginPage.feature:14)
+</pre></div></td>
+<td>0</td>
+<td>parallelRun.parallelRunner@6580cfdd</td></tr>
+<tr>
+<td title='parallelRun.parallelRunner.runScenario()'><b>runScenario</b><br>Test class: parallelRun.parallelRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Accounts page title", "Optional[Account Page Feature]"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.qa.factory.DriverFactory.getDriver()&quot; is null
+	at stepdefinitions.AccountPageSteps.user_has_already_logged_in_to_application(AccountPageSteps.java:30)
+	at ?.user has already logged in to application(file:///C:/BDD_Workspace/ecommerceBDDFramework/src/test/resources/AppFeatures/AccountsPage.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2145926141", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2145926141'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.qa.factory.DriverFactory.getDriver()&quot; is null
+	at stepdefinitions.AccountPageSteps.user_has_already_logged_in_to_application(AccountPageSteps.java:30)
+	at ?.user has already logged in to application(file:///C:/BDD_Workspace/ecommerceBDDFramework/src/test/resources/AppFeatures/AccountsPage.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>parallelRun.parallelRunner@6580cfdd</td></tr>
+</table><p>
+</body>
+</html>
